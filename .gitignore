@@ -1,0 +1,23 @@
+# Jekyll Stuff
+_build
+.sass-cache
+.jekyll-metadata
+
+# Node Stuff
+node_modules
+
+# Mac Stuff
+.DS_Store
+
+# Assets
+assets/css
+
+# rbenv
+.gems
+
+# assets
+dist
+bower_components
+
+# notes
+.notes

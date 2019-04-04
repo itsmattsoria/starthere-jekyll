@@ -1,0 +1,4 @@
+# Manual Navigation Setup
+navItems:
+  - title: About
+    path: /about/

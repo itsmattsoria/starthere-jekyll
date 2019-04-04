@@ -1,0 +1,28 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="canonical" href="{{ site.url }}">
+  <meta property="og:title" content="{{ page.title }} | {{ site.title }}" />
+  <meta property="og:image" content="hero-image.jpg" />
+
+  <link rel="stylesheet" href="{{ 'dist/css/main.css' | absolute_url }}">
+
+  <script src="{{ site.trackingUrl }}"></script>
+
+  <link rel="shortcut icon" type="image/ico" href="{{ 'dist/images/favicon.png' | absolute_url }}">
+
+  <!-- Inject SVGs Defs for SVG icon use -->
+  <script>
+    var ajax = new XMLHttpRequest();
+    ajax.open("GET", "dist/svgs/svgs-defs.svg", true);
+    ajax.send();
+    ajax.onload = function(e) {
+      var div = document.createElement("div");
+      div.className += "svg-defs hidden";
+      div.innerHTML = ajax.responseText;
+      document.body.insertBefore(div, document.body.childNodes[0]);
+    }
+  </script>
+</head>

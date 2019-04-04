@@ -1,0 +1,21 @@
+<!doctype html>
+  <!--[if IE 9 ]> <html lang="en" class="no-js ie9 lt-ie10"> <![endif]-->
+  <!--[if gt IE 9]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+
+  {% include head.html %}
+
+  <body class="{% body_class %} {{ page.bodyClasses }}">
+    <div id="breakpoint-indicator"></div>
+
+    {% include header.html %}
+
+    <main class="site-main" role="main">
+      <div class="site-wrapper" data-hoverPairId="toTop">
+        {{ content }}
+      </div>
+    </main>
+
+    {% include footer.html %}
+
+  </body>
+</html>
